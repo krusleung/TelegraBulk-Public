@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - TelegraBulk</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #38b6ff;
+            border-bottom: 3px solid #38b6ff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2a8fd9;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #1e6fb3;
+            margin-top: 20px;
+        }
+        .important {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        a {
+            color: #38b6ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for TelegraBulk</h1>
+        <p><strong>Last Updated:</strong> October 22, 2025</p>
+        <p><strong>Effective Date:</strong> October 22, 2025</p>
+
+        <p>TelegraBulk ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how our accessibility-focused messaging assistant handles your information.</p>
+
+        <div class="highlight">
+            <strong>Key Privacy Principle:</strong> TelegraBulk processes all data locally on your device. We do NOT collect, store, transmit, or share your personal information with any servers or third parties.
+        </div>
+
+        <h2>1. Information We Access</h2>
+
+        <h3>1.1 AccessibilityService Usage</h3>
+        <p>TelegraBulk uses Android's AccessibilityService API to assist users with motor impairments or other disabilities in sending messages via Messaging App more easily. Through this service, the app accesses:</p>
+        <ul>
+            <li><strong>UI Elements:</strong> Buttons, text fields, and interface elements within Messaging App</li>
+            <li><strong>Message Content:</strong> Only the messages that YOU explicitly provide within the app for sending</li>
+            <li><strong>Phone Numbers:</strong> Only the contact phone numbers that YOU provide or import</li>
+        </ul>
+
+        <div class="important">
+            <strong>Important:</strong> The AccessibilityService ONLY monitors Messaging App applications (Messaging App and Messaging App X). It does NOT access any other apps on your device.
+        </div>
+
+        <h3>1.2 Local Storage</h3>
+        <p>The following data is stored locally on your device using AsyncStorage:</p>
+        <ul>
+            <li>Contact lists (phone numbers you provide)</li>
+            <li>Message templates (messages you create)</li>
+            <li>App preferences and settings</li>
+        </ul>
+
+        <h2>2. How We Use AccessibilityService</h2>
+
+        <h3>2.1 Purpose</h3>
+        <p>TelegraBulk is designed as an accessibility tool to help users who have:</p>
+        <ul>
+            <li>Motor impairments that make repetitive messaging difficult</li>
+            <li>Conditions that benefit from scheduled message assistance</li>
+            <li>Need for simplified messaging workflows</li>
+        </ul>
+
+        <h3>2.2 Functionality</h3>
+        <p>The AccessibilityService performs the following actions on your behalf:</p>
+        <ul>
+            <li>Opens Messaging App chat conversations</li>
+            <li>Locates message input fields</li>
+            <li>Pastes your pre-written messages</li>
+            <li>Clicks the send button</li>
+            <li>Returns to the app after completion</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Privacy Protection:</strong> All these actions happen locally on your device. The app does NOT transmit this information to any external servers.
+        </div>
+
+        <h2>3. Data Storage and Processing</h2>
+
+        <h3>3.1 Local Processing Only</h3>
+        <p>TelegraBulk processes all data exclusively on your device:</p>
+        <ul>
+            <li><strong>Messages:</strong> Temporarily held in device memory during sending, NOT stored permanently</li>
+            <li><strong>Contacts:</strong> Stored locally in AsyncStorage, NOT uploaded to any server</li>
+            <li><strong>Data:</strong> Accessed in real-time via AccessibilityService, NOT recorded or saved</li>
+        </ul>
+
+        <h3>3.2 No Server Communication</h3>
+        <p>TelegraBulk does NOT:</p>
+        <ul>
+            <li>Send your messages to our servers</li>
+            <li>Upload your contact lists anywhere</li>
+            <li>Transmit Messaging App conversation data</li>
+            <li>Collect analytics or usage statistics</li>
+            <li>Track your activity</li>
+            <li>Share data with third parties</li>
+        </ul>
+
+        <h2>4. Permissions Explained</h2>
+
+        <h3>4.1 AccessibilityService Permission</h3>
+        <p><strong>Why we need it:</strong> To interact with Messaging App's interface on your behalf, helping users with disabilities send messages more easily.</p>
+        <p><strong>How we use it:</strong> Only to automate message sending within Messaging App as described in Section 2.2.</p>
+        <p><strong>What we access:</strong> Messaging App's UI elements only when you choose to send messages.</p>
+
+        <h3>4.2 Other Permissions</h3>
+        <ul>
+            <li><strong>INTERNET:</strong> Required by React Native framework (app does NOT make network requests for data collection)</li>
+            <li><strong>SYSTEM_ALERT_WINDOW:</strong> To display notifications and overlays</li>
+            <li><strong>READ/WRITE_EXTERNAL_STORAGE:</strong> To import contact lists from files (optional, controlled by you)</li>
+            <li><strong>POST_NOTIFICATIONS:</strong> To notify you of message sending status</li>
+        </ul>
+
+        <h2>5. Third-Party Services</h2>
+
+        <h3>5.1 Messaging Apps</h3>
+        <p>TelegraBulk interacts with Messaging App apps installed on your device (Messaging App and Messaging App X). We do NOT:</p>
+        <ul>
+            <li>Share data with Messaging App</li>
+            <li>Transmit your messages through our servers (messages are sent through Messaging App's normal infrastructure)</li>
+        </ul>
+        <p><strong>Note:</strong> Your messages are sent through Messaging App's normal infrastructure, subject to Messaging App's own privacy policy and terms of service.</p>
+
+        <h3>5.2 No Analytics or Tracking</h3>
+        <p>TelegraBulk does NOT use:</p>
+        <ul>
+            <li>Google Analytics</li>
+            <li>Facebook SDK</li>
+            <li>Advertising networks</li>
+            <li>Crash reporting services</li>
+            <li>Any third-party data collection tools</li>
+        </ul>
+
+        <h2>6. Data Security</h2>
+        <p>Since all data remains on your device:</p>
+        <ul>
+            <li>Data security depends on your device's security (lock screen, encryption, etc.)</li>
+            <li>We recommend using device encryption and secure lock methods</li>
+            <li>No data transmission means no interception risk</li>
+            <li>Uninstalling the app removes all local data</li>
+        </ul>
+
+        <h2>7. Children's Privacy</h2>
+        <p>TelegraBulk is not directed to children under 13. We do not knowingly collect information from children. If you believe a child has used our app, please contact us to request data deletion (though no data is collected by our servers).</p>
+
+        <h2>8. Your Rights and Controls</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li><strong>Access:</strong> All your data is on your device in the app</li>
+            <li><strong>Delete:</strong> Clear data in app settings or uninstall the app</li>
+            <li><strong>Disable:</strong> Turn off AccessibilityService in Android Settings → Accessibility</li>
+            <li><strong>Export:</strong> Contact data can be exported from the app</li>
+        </ul>
+
+        <h2>9. Changes to Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+        <ul>
+            <li>Posting the new Privacy Policy on this page</li>
+            <li>Updating the "Last Updated" date</li>
+            <li>Providing in-app notification for material changes</li>
+        </ul>
+        <p>You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h2>10. Compliance</h2>
+
+        <h3>10.1 Google Play Policies</h3>
+        <p>TelegraBulk complies with Google Play's policies regarding:</p>
+        <ul>
+            <li>AccessibilityService usage for legitimate accessibility purposes</li>
+            <li>Transparent data handling practices</li>
+            <li>User privacy protection</li>
+        </ul>
+
+        <h3>10.2 GDPR Compliance (For EU Users)</h3>
+        <p>Under GDPR, you have rights to:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> Access your data stored locally on your device</li>
+            <li><strong>Right to Erasure:</strong> Delete the app and all local data</li>
+            <li><strong>Right to Data Portability:</strong> Export your contacts from the app</li>
+        </ul>
+        <p><strong>Note:</strong> Since no data is collected on servers, there is no data controller processing your personal information externally.</p>
+
+        <h2>11. Disclaimer</h2>
+        <div class="important">
+            <p><strong>Important Notice:</strong></p>
+            <ul>
+                <li>TelegraBulk is NOT affiliated with, endorsed by, or partnered with Messaging App</li>
+                <li>Use of this app should comply with Messaging App's Terms of Service</li>
+                <li>Bulk messaging may be subject to Messaging App's usage policies</li>
+                <li>We are not responsible for any account restrictions imposed by Messaging App</li>
+            </ul>
+        </div>
+
+        <h2>12. Contact Information</h2>
+        <p>If you have questions or concerns about this Privacy Policy or our privacy practices, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> support@telegrabulk.app</li>
+            <li><strong>GitHub:</strong> https://github.com/krusleung/TelegraBulk</li>
+        </ul>
+
+        <h2>13. Consent</h2>
+        <p>By using TelegraBulk, you consent to this Privacy Policy and agree to its terms. If you do not agree with this policy, please do not use the app.</p>
+
+        <div class="footer">
+            <p>&copy; 2025 TelegraBulk. All rights reserved.</p>
+            <p>This privacy policy was last updated on October 22, 2025.</p>
+        </div>
+    </div>
+</body>
+</html>
